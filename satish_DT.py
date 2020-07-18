@@ -1,7 +1,6 @@
 # install packages
 import pandas as pd
 
-
 # import datas
 df=pd.read_csv('adult.csv')
 
@@ -33,8 +32,6 @@ array(['United-States', '?', 'Mexico', 'Greece', 'Vietnam', 'China',
        'Portugal', 'Laos', 'Thailand', 'Outlying-US(Guam-USVI-etc)'],
 
 '''
-
-
 # inputs and outputs
 x=df.loc[:,~df.columns.isin(['income'])]
 y=df['income']
